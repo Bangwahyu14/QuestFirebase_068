@@ -1,5 +1,6 @@
 package com.example.questfirebase.repositori
 
+
 import android.app.Application
 
 interface ContainerApp {
@@ -19,4 +20,6 @@ class AplikasiDataSiswa : Application() {
         this.container = DefaultContainerApp()
     }
 }
+
+
 
