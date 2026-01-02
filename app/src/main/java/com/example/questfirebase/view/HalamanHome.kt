@@ -84,3 +84,28 @@ fun HomeScreen(
     }
 }
 
+@Composable
+fun HomeBody(
+    statusUiSiswa: StatusUiSiswa,
+    onSiswaClick: (Int) -> Unit,
+    retryAction: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = modifier
+    ) {
+        when (statusUiSiswa) {
+            is StatusUiSiswa.Loading -> LoadingScreen()
+            is StatusUiSiswa.Success -> DaftarSiswa(
+                itemsSiswa = statusUiSiswa.siswa,
+                onSiswaClick = { it.id.toInt() }
+            )
+            is StatusUiSiswa.Error -> ErrorScreen(
+                retryAction = retryAction,
+                modifier = modifier.fillMaxSize()
+            )
+        }
+    }
+}
+
