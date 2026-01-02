@@ -34,12 +34,13 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.myfirebase.R
-import com.example.myfirebase.modeldata.Siswa
-import com.example.myfirebase.view.route.DestinasiHome
-import com.example.myfirebase.viewmodel.HomeViewModel
-import com.example.myfirebase.viewmodel.PenyediaViewModel
-import com.example.myfirebase.viewmodel.StatusUiSiswa
+import com.example.questfirebase.R
+import com.example.questfirebase.modeldata.Siswa
+import com.example.questfirebase.view.route.DestinasiHome
+import com.example.questfirebase.viewmodel.HomeViewModel
+import com.example.questfirebase.viewmodel.PenyediaViewModel
+import com.example.questfirebase.viewmodel.StatusUiSiswa
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

@@ -1,12 +1,12 @@
 package com.example.questfirebase.viewmodel
 
+import com.example.questfirebase.modeldata.Siswa
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.questfirebase.modeldata.Siswa
-import com.example.questfirebase.repositori.RepositorySiswa
+import com.example.questfirebase.view.route.RepositorySiswa
 import kotlinx.coroutines.launch
 import java.io.IOException
 
@@ -36,4 +36,4 @@ class HomeViewModel(private val repositoriSiswa: RepositorySiswa) : ViewModel() 
             }
         }
     }
-}}
+}

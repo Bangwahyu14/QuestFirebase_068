@@ -2,6 +2,8 @@ package com.example.questfirebase.repositori
 
 
 import android.app.Application
+import com.example.questfirebase.view.route.FirebaseRepositorySiswa
+import com.example.questfirebase.view.route.RepositorySiswa
 
 interface ContainerApp {
     val repositorySiswa: RepositorySiswa
