@@ -42,6 +42,16 @@ RepositorySiswa
         }
     }
 
-
+    suspend fun editSatuSiswa(){
+        if (validasiInput(uiStateSiswa.detailSiswa)){
+            try {
+                repositorySiswa.editSatuSiswa(idSiswa,uiStateSiswa.detailSiswa.toSiswa
+                    ())
+                println("Update Sukses: $idSiswa")
+            } catch (e: Exception) {
+                println("Update Error: ${e.message}")
+            }
+        }
+    }
 
 }
